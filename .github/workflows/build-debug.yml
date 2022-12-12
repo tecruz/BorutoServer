@@ -30,4 +30,4 @@ jobs:
             gradle-${{ hashFiles('gradle-checksums.txt') }}-
 
       - name: Build App
-        run: ./gradlew -t build
+        run: ./gradlew build
