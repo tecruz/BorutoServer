@@ -46,6 +46,14 @@ dependencies {
     implementation("io.insert-koin:koin-logger-slf4j:$koinVersion")
 }
 
+tasks.withType<JacocoReport> {
+    reports {
+        xml.required.set(true)
+        csv.required.set(true)
+        html.required.set(true)
+    }
+}
+
 tasks.withType<Test> {
     useJUnitPlatform() // Note: automatically generated when creating project
     finalizedBy(tasks.jacocoTestReport)
