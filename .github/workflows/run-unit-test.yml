@@ -32,9 +32,6 @@ jobs:
       - name: unitTest
         run: ./gradlew test
 
-      - name: jacocoReport
-        run: ./gradlew jacocoTestReport
-
       - name: run codecov
         uses: codecov/codecov-action@v3
 
