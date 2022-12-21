@@ -2,6 +2,9 @@ package com.example.models
 
 import kotlinx.serialization.Serializable
 
+/**
+ * Hero resource representation
+ */
 @Serializable
 data class Hero(
     val id: Int,

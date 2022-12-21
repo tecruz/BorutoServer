@@ -13,6 +13,9 @@ import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
+/**
+ * Tests the endpoints of the server
+ */
 class ApplicationTest {
     @Test
     fun `access root endpoint, assert correct information`() =
