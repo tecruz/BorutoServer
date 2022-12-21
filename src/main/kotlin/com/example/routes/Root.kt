@@ -5,6 +5,9 @@ import io.ktor.server.application.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
+/**
+ * Root route implementation
+ */
 fun Route.root() {
     get("/"){
         call.respond(

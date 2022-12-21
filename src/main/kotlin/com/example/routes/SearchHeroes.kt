@@ -7,6 +7,9 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
+/**
+ * Search heroes route implementation
+ */
 fun Route.searchHeroes() {
     val heroRepository: HeroRepository by inject()
 

@@ -8,6 +8,9 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.*
 import org.koin.ktor.ext.inject
 
+/**
+ * All heroes route implementation
+ */
 fun Route.getAllHeroes() {
     val heroRepository: HeroRepository by inject()
 

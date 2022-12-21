@@ -6,6 +6,9 @@ import com.example.models.Hero
 const val NEXT_PAGE_KEY = "nextPage"
 const val PREVIOUS_PAGE_KEY = "prevPage"
 
+/**
+ * [HeroRepository] implementation
+ */
 class HeroRepositoryImpl : HeroRepository {
 
     override val heroes: Map<Int, List<Hero>> by lazy {
