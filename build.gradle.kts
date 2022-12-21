@@ -53,8 +53,3 @@ tasks.withType<JacocoReport> {
         html.required.set(true)
     }
 }
-
-tasks.withType<Test> {
-    useJUnitPlatform() // Note: automatically generated when creating project
-    finalizedBy(tasks.jacocoTestReport)
-}

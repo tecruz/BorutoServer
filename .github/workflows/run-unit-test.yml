@@ -32,6 +32,9 @@ jobs:
       - name: unitTest
         run: ./gradlew test
 
+      - name: jacoco
+        run: ./gradlew jacocoTestReport
+
       - uses: actions/upload-artifact@v3
         with:
           name: unit-test-report
